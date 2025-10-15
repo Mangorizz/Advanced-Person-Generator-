@@ -108,7 +108,7 @@ local LastNames = {
 }
 
 local Gender = math.random(1, 2)
-local FName = ""
+local Name = ""
 if Gender == 1 then
 	Gender = "Male"
 elseif Gender == 2 then
@@ -116,9 +116,12 @@ elseif Gender == 2 then
 end
 
 if Gender == "Male" then
-	FName ..= MFNames[math.random(#MFNames)]
+	Name ..= MFNames[math.random(#MFNames)]
 elseif Gender == "Female" then
-	FName ..= FFNames[math.random(#FFNames)]
+	Name ..= FFNames[math.random(#FFNames)]
 end
 
-print(FName)
+local LName = LNames[math.random(#LNames)]
+Name ..= " ".. LName
+
+print(Name)
