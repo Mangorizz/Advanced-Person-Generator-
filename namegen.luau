@@ -124,4 +124,4 @@ end
 local LName = LNames[math.random(#LNames)]
 Name ..= " ".. LName
 
-print(Name)
+print(Name.. ", My Gender is ".. Gender.. ".")
