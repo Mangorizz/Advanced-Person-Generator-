@@ -211,7 +211,9 @@ local TenTraits = "My traits are"
 local FinalTraitsTable = {}
 local FinalTraits = "My traits are"
 function PickTenTraits()
-	TenTraits = TenTraits.. FinalTraitsTable[math.random(1, #FinalTraitsTable)]
+	for i = 1, 10, 1 do
+		TenTraits = TenTraits..", ".. FinalTraitsTable[math.random(1, #FinalTraitsTable)]
+	end
 end
 function RandomTraits()
 	for _, i in pairs(Traits) do
@@ -219,9 +221,13 @@ function RandomTraits()
 			FinalTraits = FinalTraits..", "..i.trait
 			table.insert(FinalTraitsTable, i.trait)
 		end
-			PickTenTraits()
-		end
 	end
+	PickTenTraits()
+end
 
 RandomTraits()
 print(FinalTraits)
+print(TenTraits)
+		
+
+	
