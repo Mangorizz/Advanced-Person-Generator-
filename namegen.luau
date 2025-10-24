@@ -19,6 +19,7 @@ local Traits = {
 	{category = "Personality", trait = "Confident", rarity = 0.7},
 	{category = "Personality", trait = "Stubborn", rarity = 0.1},
 	{category = "Personality", trait = "Ambitious", rarity = 0.3},
+	{category = "Quirks", trait = "Gay", rarity = 0.02},
 
 	{category = "Interests", trait = "Loves Music", rarity = 0.9},
 	{category = "Interests", trait = "Enjoys Sports", rarity = 0.7},
@@ -75,8 +76,7 @@ local Traits = {
 	{category = "Quirks", trait = "Loves Old Movies", rarity = 0.4},
 	{category = "Quirks", trait = "Afraid of Spiders", rarity = 0.2},
 	{category = "Quirks", trait = "Speaks in Puns", rarity = 0.1},
-	{category = "Quirks", trait = "Always Singing", rarity = 0.3},
-	{category = "Quirks", trait = "Gay", rarity = 0.02}
+	{category = "Quirks", trait = "Always Singing", rarity = 0.3}
 }
 
 
