@@ -19,7 +19,7 @@ local Traits = {
 	{category = "Personality", trait = "Confident", rarity = 0.7},
 	{category = "Personality", trait = "Stubborn", rarity = 0.1},
 	{category = "Personality", trait = "Ambitious", rarity = 0.3},
-	{category = "Quirks", trait = "Gay", rarity = 0.02},
+	{category = "Personality", trait = "Gay", rarity = 0.02},
 
 	{category = "Interests", trait = "Loves Music", rarity = 0.9},
 	{category = "Interests", trait = "Enjoys Sports", rarity = 0.7},
