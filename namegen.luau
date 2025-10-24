@@ -149,7 +149,7 @@ local FFNames = {
 	"Safa", "Jasmine", "Amira", "Dana", "Huda", "Karima", "Soraya", "Rania", "Maha", "Laila"
 }
 
-local LastNames = {
+local LNames = {
 	-- English / Western
 	"Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller", "Davis", "Rodriguez", "Martinez",
 	"Hernandez", "Lopez", "Gonzalez", "Wilson", "Anderson", "Thomas", "Taylor", "Moore", "Jackson", "Martin",
