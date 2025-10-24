@@ -1,3 +1,84 @@
+local Traits = {
+	{category = "Personality", trait = "Kind", rarity = 0.9},
+	{category = "Personality", trait = "Brave", rarity = 0.8},
+	{category = "Personality", trait = "Curious", rarity = 0.7},
+	{category = "Personality", trait = "Funny", rarity = 0.6},
+	{category = "Personality", trait = "Shy", rarity = 0.4},
+	{category = "Personality", trait = "Serious", rarity = 0.3},
+	{category = "Personality", trait = "Optimistic", rarity = 0.9},
+	{category = "Personality", trait = "Pessimistic", rarity = 0.2},
+	{category = "Personality", trait = "Clever", rarity = 0.5},
+	{category = "Personality", trait = "Adventurous", rarity = 0.4},
+	{category = "Personality", trait = "Calm", rarity = 0.6},
+	{category = "Personality", trait = "Impulsive", rarity = 0.3},
+	{category = "Personality", trait = "Sarcastic", rarity = 0.2},
+	{category = "Personality", trait = "Honest", rarity = 0.8},
+	{category = "Personality", trait = "Loyal", rarity = 0.7},
+	{category = "Personality", trait = "Independent", rarity = 0.5},
+	{category = "Personality", trait = "Empathetic", rarity = 0.6},
+	{category = "Personality", trait = "Confident", rarity = 0.7},
+	{category = "Personality", trait = "Stubborn", rarity = 0.1},
+	{category = "Personality", trait = "Ambitious", rarity = 0.3},
+
+	{category = "Interests", trait = "Loves Music", rarity = 0.9},
+	{category = "Interests", trait = "Enjoys Sports", rarity = 0.7},
+	{category = "Interests", trait = "Likes Reading", rarity = 0.8},
+	{category = "Interests", trait = "Tech Enthusiast", rarity = 0.5},
+	{category = "Interests", trait = "Gamer", rarity = 0.7},
+	{category = "Interests", trait = "Artist", rarity = 0.3},
+	{category = "Interests", trait = "Chef", rarity = 0.2},
+	{category = "Interests", trait = "Traveler", rarity = 0.6},
+	{category = "Interests", trait = "Gardener", rarity = 0.3},
+	{category = "Interests", trait = "Collector", rarity = 0.1},
+	{category = "Interests", trait = "Animal Lover", rarity = 0.8},
+	{category = "Interests", trait = "Photographer", rarity = 0.5},
+	{category = "Interests", trait = "Writer", rarity = 0.4},
+	{category = "Interests", trait = "Singer", rarity = 0.5},
+	{category = "Interests", trait = "Fashion Enthusiast", rarity = 0.4},
+	{category = "Interests", trait = "Film Buff", rarity = 0.6},
+	{category = "Interests", trait = "History Nerd", rarity = 0.3},
+	{category = "Interests", trait = "Science Lover", rarity = 0.4},
+	{category = "Interests", trait = "Biker", rarity = 0.2},
+
+	{category = "Skills", trait = "Leader", rarity = 0.4},
+	{category = "Skills", trait = "Quick Learner", rarity = 0.8},
+	{category = "Skills", trait = "Creative Thinker", rarity = 0.6},
+	{category = "Skills", trait = "Problem Solver", rarity = 0.7},
+	{category = "Skills", trait = "Hard Worker", rarity = 0.9},
+	{category = "Skills", trait = "Listener", rarity = 0.8},
+	{category = "Skills", trait = "Team Player", rarity = 0.9},
+	{category = "Skills", trait = "Analytical", rarity = 0.5},
+	{category = "Skills", trait = "Strategic", rarity = 0.6},
+	{category = "Skills", trait = "Inventive", rarity = 0.4},
+	{category = "Skills", trait = "Negotiator", rarity = 0.5},
+	{category = "Skills", trait = "Organizer", rarity = 0.7},
+	{category = "Skills", trait = "Public Speaker", rarity = 0.3},
+	{category = "Skills", trait = "Strong Memory", rarity = 0.6},
+	{category = "Skills", trait = "Good Cook", rarity = 0.7},
+	{category = "Skills", trait = "Multilingual", rarity = 0.3},
+
+	{category = "Quirks", trait = "Talks to Pets", rarity = 0.2},
+	{category = "Quirks", trait = "Collects Rocks", rarity = 0.1},
+	{category = "Quirks", trait = "Sleeps with Socks", rarity = 0.05},
+	{category = "Quirks", trait = "Eats Dessert First", rarity = 0.2},
+	{category = "Quirks", trait = "Loves Rain", rarity = 0.4},
+	{category = "Quirks", trait = "Hates Sunshine", rarity = 0.1},
+	{category = "Quirks", trait = "Sings Randomly", rarity = 0.3},
+	{category = "Quirks", trait = "Obsessed with Cleanliness", rarity = 0.2},
+	{category = "Quirks", trait = "Always Early", rarity = 0.3},
+	{category = "Quirks", trait = "Never Lies", rarity = 0.4},
+	{category = "Quirks", trait = "Laughs at Own Jokes", rarity = 0.5},
+	{category = "Quirks", trait = "Hums Constantly", rarity = 0.3},
+	{category = "Quirks", trait = "Talks Fast", rarity = 0.2},
+	{category = "Quirks", trait = "Obsessed with Lists", rarity = 0.1},
+	{category = "Quirks", trait = "Carries Snacks Everywhere", rarity = 0.3},
+	{category = "Quirks", trait = "Loves Old Movies", rarity = 0.4},
+	{category = "Quirks", trait = "Afraid of Spiders", rarity = 0.2},
+	{category = "Quirks", trait = "Speaks in Puns", rarity = 0.1},
+	{category = "Quirks", trait = "Always Singing", rarity = 0.3}
+}
+
+
 local MFNames = {
 	-- English / Western
 	"Andy", "Anthony", "Dan", "Bob", "Charlie", "Dorian", "Will", "Frank", "Barry", "James",
@@ -125,3 +206,22 @@ local LName = LNames[math.random(#LNames)]
 Name ..= " ".. LName
 
 print(Name.. ", My Gender is ".. Gender.. ".")
+
+local TenTraits = "My traits are"
+local FinalTraitsTable = {}
+local FinalTraits = "My traits are"
+function PickTenTraits()
+	TenTraits = TenTraits.. FinalTraitsTable[math.random(1, #FinalTraitsTable)]
+end
+function RandomTraits()
+	for _, i in pairs(Traits) do
+		if math.random() <= i.rarity then
+			FinalTraits = FinalTraits..", "..i.trait
+			table.insert(FinalTraitsTable, i.trait)
+		end
+			PickTenTraits()
+		end
+	end
+
+RandomTraits()
+print(FinalTraits)
