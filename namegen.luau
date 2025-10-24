@@ -75,7 +75,8 @@ local Traits = {
 	{category = "Quirks", trait = "Loves Old Movies", rarity = 0.4},
 	{category = "Quirks", trait = "Afraid of Spiders", rarity = 0.2},
 	{category = "Quirks", trait = "Speaks in Puns", rarity = 0.1},
-	{category = "Quirks", trait = "Always Singing", rarity = 0.3}
+	{category = "Quirks", trait = "Always Singing", rarity = 0.3},
+	{category = "Quirks", trait = "Gay", rarity = 0.02}
 }
 
 
