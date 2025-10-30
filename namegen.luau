@@ -375,9 +375,12 @@ print(FinalTraits)
 print(TenTraits)
 		
 local PickedCollege = ""
+local PickedCollegeType = ""
+local PickedDegree = ""
 function PickCollege()
 	local i = Colleges[math.random(1, #Colleges)]
 	PickedCollege = i.Name
+	PickedCollegeType = i.Type
 end
 PickedDegree = ""
 
