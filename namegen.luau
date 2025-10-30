@@ -393,5 +393,6 @@ PickDegree()
 PickCollege()
 print(PickedCollege)
 print(PickedDegree)
+print(PickedCollegeType)
 	
 	
