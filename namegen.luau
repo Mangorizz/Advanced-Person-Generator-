@@ -374,5 +374,21 @@ RandomTraits()
 print(FinalTraits)
 print(TenTraits)
 		
+local PickedCollege = ""
+function PickCollege()
+	local i = Colleges[math.random(1, #Colleges)]
+	PickedCollege = i.Name
+end
+PickedDegree = ""
 
+function PickDegree()
+	d = Degrees[math.random(1, #Degrees)]
+	PickedDegree = d
+end
+
+PickDegree()
+PickCollege()
+print(PickedCollege)
+print(PickedDegree)
+	
 	
