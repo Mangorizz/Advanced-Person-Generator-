@@ -374,11 +374,17 @@ function PickDegree()
 	d = Degrees[math.random(1, #Degrees)]
 	PickedDegree = d
 end
+local CEnd = ""
+
+function TimeEndedC()
+	local c = Colleges[math.random(1, #Colleges)]
+	CEnd = c.End
+end
 
 PickDegree()
 PickCollege()
 print(PickedCollege)
 print(PickedDegree)
 print(PickedCollegeType)
-	
+print(CEnd)	
 	
